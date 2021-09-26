@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    padding: 65px;
+}
+
+.mapa{
+    width: 700px;
+    height: 400px;
+    background-color: gray;
+}
+
+button{
+    position: absolute;
+}

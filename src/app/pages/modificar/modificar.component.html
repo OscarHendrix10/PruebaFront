@@ -1,0 +1,97 @@
+<div>
+  <div class="col">
+  <h3>
+    <a href="/mostrar" class="float-end" style="margin: 10px 15px 10px 15px;">Mostrar Conductores</a>
+  </h3>
+</div>
+</div>
+<section class="seccion2">
+    <div class="formulario">
+      <h1>{{ title }}</h1>
+    </div>
+  
+    <div class="container">
+        <form>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="Nombre">Nombre Completo:</label>
+                <input type="text" class="form-control" id="nombreCompleto" [(ngModel)]="conductores.nombreCompleto" [ngModelOptions]="{standalone: true}"/>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="Puesto">Puesto</label>
+                <input type="text" class="form-control" id="puesto" [(ngModel)]="conductores.puesto" [ngModelOptions]="{standalone: true}"/>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="departamento">Departamento:</label>
+                <select class="form-select" aria-label="Default select example" [(ngModel)]="conductores.departamento" [ngModelOptions]="{standalone: true}">
+                  <option selected>Seleccione Departamento:</option>
+                  <option value="U.Y.S Leon">U.Y.S Leon</option>
+                  <option value="TUL 2000">TUL 2000</option>
+                  <option value="Linea Dorarda">Linea Dorarda</option>
+                </select>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="licencia">Tipo de Licencia:</label>
+                <select class="form-select" aria-label="Default select example" [(ngModel)]="conductores.tipoLicencia" [ngModelOptions]="{standalone: true}">
+                  <option selected>Seleccione tipo:</option>
+                  <option value="Tipo A">Tipo A</option>
+                  <option value="Tipo B">Tipo B</option>
+                  <option value="Tipo C">Tipo C</option>
+                  <option value="Tipo D">Tipo D</option>
+                </select>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="Puesto">Edad:</label>
+                <input type="number" class="form-control" id="edad" [(ngModel)]="conductores.edad" [ngModelOptions]="{standalone: true}"/>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="Puesto">Fecha Ingreso:</label>
+                    <input type="date" class="form-control" id="fechaIngreso" [(ngModel)]="conductores.fechaIngreso" [ngModelOptions]="{standalone: true}"/>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="Puesto">Antiguedad:</label>
+                    <input type="number" class="form-control" id="antiguedad" [(ngModel)]="conductores.antiguedad" [ngModelOptions]="{standalone: true}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row d-flex align-content-end">
+                <div class="col-6">
+              <div class="form-group">
+                <label for="Puesto">Direccion:</label>
+                <input type="text" class="form-control" id="a" [(ngModel)]="conductores.ubicacion" [ngModelOptions]="{standalone: true}"/>
+              </div>
+            </div>
+              <div class="col-3">
+              <button type="" class="btn btn-primary" (click)="getAddress()" style="margin: 20px;"> <i class="fas fa-search"></i>  Buscar en mapa
+              </button>
+            </div>
+            </div>
+              <br />
+              <br />
+                <!-- MAPA -->
+                <div class="form-row justify-content-center">
+                  <div #map class="mapa" id="map-container"></div> 
+              </div>
+    
+              <br>
+              <br>
+              
+              <button type="" class="btn btn-primary" (click)="modificarConductor()"> <i class="fas fa-save"></i>  Registrar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
