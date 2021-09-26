@@ -84,26 +84,6 @@ export class HereService {
 
         //Marker inicial
         this.map.addObject(markerCl);
-
-        /**
-         * Evento para obtener las coodenadas 'clicleadas' en el mapa para modificar las
-         * coordenadas y la pocicios del Marker en el mapa
-         */
-        this.map.addEventListener('tap', (evt) => {
-            coords = this.map.screenToGeo(evt.currentPointer.viewportX, evt.currentPointer.viewportY);
-            console.log(coords);
-            this.map.removeObject(markerCl);
-
-            markerCl = new H.map.Marker({ lat: coords.lat, lng: coords.lng });
-            this.map.addObject(markerCl);
-
-            this.longitud = coords.lng;
-            this.latitude = coords.lat;
-        });
-
-        window.addEventListener('resize', () => this.map.getViewPort().resize());
-        let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map))
-        let ui = H.ui.UI.createDefault(this.map, this.defaultLayers);
     }
 
 }

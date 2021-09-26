@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  Url: "http://oscarhendrix10.pythonanywhere.com" 
+  Url: "http://oscarhendrix10.pythonanywhere.com",
+  rutaIMG: "dasd"
 };
 
 /*

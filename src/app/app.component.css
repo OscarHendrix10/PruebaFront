@@ -12,12 +12,17 @@ section{
 .imageBack{
     width: 350px;
     height: 90vh;
-    background-image: url("https://lh3.googleusercontent.com/proxy/oz0V_7MvWx9d8uQ7kE1XCs0WyADIK2SJr-7aYrCRVm-a83J74iMB4QzlZqCjOgl3nRsqOgk_TFNv2k9S5R-olOZpQK7ABdSb0lU8R33TbMc");
+    /* background-image: url("https://lh3.googleusercontent.com/proxy/oz0V_7MvWx9d8uQ7kE1XCs0WyADIK2SJr-7aYrCRVm-a83J74iMB4QzlZqCjOgl3nRsqOgk_TFNv2k9S5R-olOZpQK7ABdSb0lU8R33TbMc"); */
+    background-image: url("../assets/unnamed_1.png");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1;
 
+}
+
+.imgContent {
+    content: url('../assets/unnamed.png');
 }
 
 img{

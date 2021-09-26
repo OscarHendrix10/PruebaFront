@@ -21,7 +21,6 @@
     "bootstrap": "^5.1.1",
     "jspdf": "^2.4.0",
     "jspdf-autotable": "^3.5.20",
-    "pdfmake": "^0.2.2",
     "rxjs": "~6.6.0",
     "sweetalert2": "^11.1.7",
     "tslib": "^2.3.0",
