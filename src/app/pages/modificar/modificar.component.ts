@@ -70,7 +70,7 @@ export class ModificarComponent implements OnInit {
         icon: 'success',
         title: 'Modificacion Exitoso',
         text: 'Conductor Modificado Correctamente',
-        footer: '<a href="/mostrar">Ver Conductores</a>'
+        footer: '<a [routerLink]="["/mostrar"]">Ver Conductores</a>'
       });
       this.conductores = new Conductores();
      },(error) => {

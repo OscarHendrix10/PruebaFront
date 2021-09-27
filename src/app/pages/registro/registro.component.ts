@@ -58,7 +58,7 @@ export class RegistroComponent implements OnInit {
         icon: 'success',
         title: 'Registro Exitoso',
         text: 'Conductor Registrado Correctamente',
-        footer: '<a href="/mostrar">Ver Conductores</a>'
+        footer: '<a [routerLink]="["/mostrar"]">Ver Conductores</a>'
       });
       this.conductor = new Conductores();
       
