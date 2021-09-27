@@ -52,14 +52,14 @@ export class RegistroComponent implements OnInit {
 
   // REGISTRO DEL CONDUCTOR CON LOS CAMPOS ESTABLECIDOS EN LA BD
   registrar(){
+    Swal.fire({
+      icon: 'success',
+      title: 'Registro Exitoso',
+      text: 'Conductor Registrado Correctamente',
+      footer: '<a [routerLink]="["/mostrar"]">Ver Conductores</a>'
+    });
     this.consultaService.agregarCondructores(this.conductor).subscribe( (rest) => {
       console.log(rest);
-      Swal.fire({
-        icon: 'success',
-        title: 'Registro Exitoso',
-        text: 'Conductor Registrado Correctamente',
-        footer: '<a [routerLink]="["/mostrar"]">Ver Conductores</a>'
-      });
       this.conductor = new Conductores();
       
   },

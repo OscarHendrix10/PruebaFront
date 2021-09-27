@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { switchMap, tap } from "rxjs/operators";
+import { switchMap} from "rxjs/operators";
 import { Conductores } from '../../conductores.model';
 import { ConsultasService } from '../../servicios/consultas.service';
 import { HereService } from '../../servicios/here.service';

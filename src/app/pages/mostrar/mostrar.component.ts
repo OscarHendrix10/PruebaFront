@@ -45,16 +45,14 @@ export class MostrarComponent implements OnInit {
   // ELIMINACION DE UN CONDUCTOR EN LA TABLA DEL MOSTRAR.HTM PASANDO COMO PARAMETRO EL
   // ID DEL CONSTRUCTOR
   eliminar(idConductor: number) {
+    Swal.fire('Eliminacion exitosa...', 'El registro fue eliminado', 'success');
     this.consultaService.eliminarConductor(idConductor).subscribe((rest) => {
-
-      console.log(rest);
-      Swal.fire('Eliminacion exitosa...', 'El registro fue eliminado', 'success');
-      this.actualizarDatos();
-
     },
       (error) => {
         console.log(error);
+        this.actualizarDatos();
       });
+      this.actualizarDatos();
   }
 
   // BUSCADOR EN UN MENU DESPEGRABLE EN LA TABLA 

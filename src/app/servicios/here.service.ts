@@ -17,9 +17,6 @@ export class HereService {
 
 // CONSTRUCTOR OBTENIENDO LAS API KEY DEL MAPA
     constructor() {
-        this.platform2 = new H.service.Platform({
-            "apikey": "4UV3Fo0QcuA8HLw8L6CQeYvUpLSOUWk129dPQ0Gdbz8"
-          });
         this.platform = new H.service.Platform({
             "app_id": "GyIx5HZYfMaqo7y1wubc",
             "app_code": "wYk1bY-R4ESZDAJyR9_LCg"
