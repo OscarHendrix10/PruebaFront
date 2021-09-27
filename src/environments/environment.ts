@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  Url: "http://oscarhendrix10.pythonanywhere.com",
+  production: true,
+  Url: "https://oscarhendrix10.pythonanywhere.com",
   rutaIMG: "dasd"
 };
 
