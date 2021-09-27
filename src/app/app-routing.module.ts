@@ -5,14 +5,14 @@ import { MostrarComponent } from './pages/mostrar/mostrar.component';
 import { ModificarComponent } from './pages/modificar/modificar.component';
 
 //IMPLEMANTACION DE RUTAS ESTABLECIDAS ENE LE SISTEMA CON SU DEFAULT
-const routes: Routes = [{
-  path: "registro", component: RegistroComponent },
-  {path: "mostrar", component: MostrarComponent},
-  {path: "modificar/:id", component: ModificarComponent},
-  {path: "**", component: RegistroComponent}];
+// const routes: Routes = [{
+//   path: "registro", component: RegistroComponent },
+//   {path: "mostrar", component: MostrarComponent},
+//   {path: "modificar/:id", component: ModificarComponent},
+//   {path: "**", component: RegistroComponent}];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [],
+  exports: []
 })
 export class AppRoutingModule { }
